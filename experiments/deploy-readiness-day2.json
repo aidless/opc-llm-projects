@@ -1,0 +1,57 @@
+{
+  "total_checks": 10,
+  "passed": 10,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "git_log",
+      "pass": true,
+      "detail": "最近 commit: 3993877 recovery: 从 file-history 恢复 OPC 项目核心文件 + Day 1+2 内容"
+    },
+    {
+      "name": "required_files",
+      "pass": true,
+      "detail": "全部 7 文件就绪"
+    },
+    {
+      "name": "requirements_complete",
+      "pass": true,
+      "detail": "核心依赖完整"
+    },
+    {
+      "name": "data_files",
+      "pass": true,
+      "detail": "zh-docs-200 + cail_loader 就绪"
+    },
+    {
+      "name": "zh_docs_complete",
+      "pass": true,
+      "detail": "200 docs, 200 有 gold_entities"
+    },
+    {
+      "name": "cail_complete",
+      "pass": true,
+      "detail": "CAIL 51 案件"
+    },
+    {
+      "name": "demo_no_db",
+      "pass": true,
+      "detail": "Demo 不再依赖 .db 文件"
+    },
+    {
+      "name": "demo_features",
+      "pass": true,
+      "detail": "双数据集=True, demo mode=True, JSONL直读=True"
+    },
+    {
+      "name": "gitignore_safe",
+      "pass": true,
+      "detail": "exclude_db=True, keep_demo=True"
+    },
+    {
+      "name": "main_file_path",
+      "pass": true,
+      "detail": "path=projects\\graphrag_cn\\demo\\streamlit_app.py"
+    }
+  ]
+}
