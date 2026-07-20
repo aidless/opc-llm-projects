@@ -1,0 +1,443 @@
+{
+  "cail": {
+    "name": "CAIL 100",
+    "stats": {
+      "n_docs": 100,
+      "n_entities": 100,
+      "n_unique_events": 22,
+      "n_unique_types": 4,
+      "n_unique_participants": 200,
+      "avg_entities_per_doc": 1.0,
+      "events_top5": [
+        [
+          "合同纠纷",
+          7
+        ],
+        [
+          "诈骗",
+          6
+        ],
+        [
+          "借贷纠纷",
+          5
+        ],
+        [
+          "盗窃",
+          5
+        ],
+        [
+          "故意伤害",
+          5
+        ]
+      ],
+      "types_top5": [
+        [
+          "刑事",
+          37
+        ],
+        [
+          "民事",
+          29
+        ],
+        [
+          "知识产权",
+          17
+        ],
+        [
+          "行政",
+          17
+        ]
+      ]
+    },
+    "kw_hit": {
+      "n_total": 100,
+      "n_hit": 100,
+      "rate": 1.0,
+      "miss_examples": []
+    },
+    "char_f1": {
+      "n": 100,
+      "f1_avg": 0.6564
+    },
+    "retrieval_multi": {
+      "queries": [
+        "盗窃",
+        "诈骗",
+        "故意伤害",
+        "受贿",
+        "合同纠纷",
+        "专利侵权",
+        "婚姻",
+        "劳动争议"
+      ],
+      "n_query": 8,
+      "n_with_expected": 8,
+      "n_hit": 8,
+      "topk_rate": 1.0,
+      "topk_rate_in_scope": 1.0,
+      "details": [
+        {
+          "query": "盗窃",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2019-CRIMINAL-0001",
+            "CAIL2020-CRIMINAL-0001"
+          ]
+        },
+        {
+          "query": "诈骗",
+          "n_expected": 6,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2019-CRIMINAL-0002",
+            "CAIL2020-CRIMINAL-0002"
+          ]
+        },
+        {
+          "query": "故意伤害",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2019-CRIMINAL-0003",
+            "CAIL2021-CRIMINAL-0002"
+          ]
+        },
+        {
+          "query": "受贿",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2021-CRIMINAL-0001",
+            "CAIL2022-CRIMINAL-0003"
+          ]
+        },
+        {
+          "query": "合同纠纷",
+          "n_expected": 7,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2018-CIVIL-0001",
+            "CAIL2023-CIVIL-0001"
+          ]
+        },
+        {
+          "query": "专利侵权",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2021-IP-0001",
+            "CAIL2022-IP-0001"
+          ]
+        },
+        {
+          "query": "婚姻",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2020-CIVIL-0001",
+            "CAIL2021-CIVIL-0002"
+          ]
+        },
+        {
+          "query": "劳动争议",
+          "n_expected": 4,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "CAIL2020-CIVIL-0002",
+            "CAIL2022-CIVIL-0002"
+          ]
+        }
+      ]
+    },
+    "per_subcategory": {
+      "by_subcategory": {
+        "盗窃": {
+          "n_docs": 5,
+          "n_query": 2,
+          "n_hit": 2,
+          "topk_rate": 1.0
+        },
+        "诈骗": {
+          "n_docs": 6,
+          "n_query": 2,
+          "n_hit": 2,
+          "topk_rate": 1.0
+        },
+        "故意伤害": {
+          "n_docs": 5,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        },
+        "受贿": {
+          "n_docs": 5,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        },
+        "合同纠纷": {
+          "n_docs": 7,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        },
+        "专利侵权": {
+          "n_docs": 5,
+          "n_query": 2,
+          "n_hit": 2,
+          "topk_rate": 1.0
+        },
+        "婚姻家庭": {
+          "n_docs": 5,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        },
+        "劳动争议": {
+          "n_docs": 4,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        },
+        "行政诉讼": {
+          "n_docs": 4,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        },
+        "不正当竞争": {
+          "n_docs": 4,
+          "n_query": 2,
+          "n_hit": 1,
+          "topk_rate": 0.5
+        }
+      },
+      "overall_topk_rate": 0.65
+    },
+    "kcr": {
+      "n_entities": 100,
+      "n_unique_events": 22,
+      "kcr": 0.78
+    },
+    "split_dist": {
+      "train": 18,
+      "test": 82
+    },
+    "year_dist": {
+      "2018": 2,
+      "2019": 5,
+      "2020": 11,
+      "2021": 11,
+      "2022": 14,
+      "2023": 8,
+      "2024": 29,
+      "2025": 20
+    }
+  },
+  "zh_docs_200": {
+    "name": "zh-docs-200",
+    "stats": {
+      "n_docs": 200,
+      "n_entities": 200,
+      "n_unique_events": 42,
+      "n_unique_types": 19,
+      "n_unique_participants": 0,
+      "avg_entities_per_doc": 1.0,
+      "events_top5": [
+        [
+          "合同纠纷案",
+          12
+        ],
+        [
+          "受贿案",
+          12
+        ],
+        [
+          "诈骗案",
+          11
+        ],
+        [
+          "离婚案",
+          11
+        ],
+        [
+          "借贷纠纷案",
+          10
+        ]
+      ],
+      "types_top5": [
+        [
+          "刑事",
+          24
+        ],
+        [
+          "民事",
+          21
+        ],
+        [
+          "行政",
+          21
+        ],
+        [
+          "知识产权",
+          19
+        ],
+        [
+          "古代",
+          19
+        ]
+      ]
+    },
+    "kw_hit": {
+      "n_total": 200,
+      "n_hit": 200,
+      "rate": 1.0,
+      "miss_examples": []
+    },
+    "char_f1": {
+      "n": 200,
+      "f1_avg": 0.0149
+    },
+    "retrieval_multi": {
+      "queries": [
+        "盗窃",
+        "诈骗",
+        "故意伤害",
+        "受贿",
+        "合同纠纷",
+        "专利侵权",
+        "婚姻",
+        "劳动争议"
+      ],
+      "n_query": 8,
+      "n_with_expected": 5,
+      "n_hit": 5,
+      "topk_rate": 0.625,
+      "topk_rate_in_scope": 1.0,
+      "details": [
+        {
+          "query": "盗窃",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "法律-002",
+            "法律-022"
+          ]
+        },
+        {
+          "query": "诈骗",
+          "n_expected": 11,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "法律-001",
+            "法律-005"
+          ]
+        },
+        {
+          "query": "故意伤害",
+          "n_expected": 5,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "法律-015",
+            "法律-045"
+          ]
+        },
+        {
+          "query": "受贿",
+          "n_expected": 12,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "法律-018",
+            "法律-029"
+          ]
+        },
+        {
+          "query": "合同纠纷",
+          "n_expected": 12,
+          "topk_hit": true,
+          "topk_doc_ids": [
+            "法律-003",
+            "法律-012"
+          ]
+        },
+        {
+          "query": "专利侵权",
+          "n_expected": 0,
+          "topk_hit": false,
+          "topk_doc_ids": []
+        },
+        {
+          "query": "婚姻",
+          "n_expected": 0,
+          "topk_hit": false,
+          "topk_doc_ids": []
+        },
+        {
+          "query": "劳动争议",
+          "n_expected": 0,
+          "topk_hit": false,
+          "topk_doc_ids": []
+        }
+      ]
+    },
+    "per_subcategory": {
+      "by_subcategory": {},
+      "overall_topk_rate": 0
+    },
+    "kcr": {
+      "n_entities": 200,
+      "n_unique_events": 42,
+      "kcr": 0.79
+    },
+    "split_dist": {
+      "train": 144,
+      "test": 56
+    },
+    "year_dist": {
+      "2020": 53,
+      "2021": 36,
+      "2022": 49,
+      "2023": 28,
+      "2024": 34
+    }
+  },
+  "compare": {
+    "n_docs": {
+      "CAIL": 100,
+      "zh-docs-200": 200
+    },
+    "n_entities": {
+      "CAIL": 100,
+      "zh-docs-200": 200
+    },
+    "n_unique_events": {
+      "CAIL": 22,
+      "zh-docs-200": 42
+    },
+    "n_unique_participants": {
+      "CAIL": 200,
+      "zh-docs-200": 0
+    },
+    "kw_hit_rate": {
+      "CAIL": 1.0,
+      "zh-docs-200": 1.0
+    },
+    "char_f1_avg": {
+      "CAIL": 0.6564,
+      "zh-docs-200": 0.0149
+    },
+    "retrieval_topk_rate": {
+      "CAIL": 1.0,
+      "zh-docs-200": 0.625
+    },
+    "kcr": {
+      "CAIL": 0.78,
+      "zh-docs-200": 0.79
+    },
+    "overall_subcategory_topk_rate": {
+      "CAIL": 0.65,
+      "zh-docs-200": 0
+    }
+  }
+}
