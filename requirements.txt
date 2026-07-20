@@ -1,0 +1,20 @@
+# GraphRAG-CN Web Demo 依赖
+# Generated 2026-07-19 for Phase 2 Week 7 Day 4
+
+# Core
+pydantic>=2.0,<3.0
+networkx>=3.0,<4.0
+
+# Web Demo
+streamlit>=1.30
+langchain-core>=0.3
+httpx>=0.27
+
+# LLM (Ollama)
+# Ollama itself runs locally, not via pip
+
+# Dev
+pytest>=8.0
+pytest-asyncio>=1.0
+pytest-cov>=6.0
+pytest-mock>=3.0
