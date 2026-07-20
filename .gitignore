@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# 数据(体积大,不入 Git)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/*.db
+data/*.sqlite
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 实验结果(可选,看是否需要追溯)
+experiments/*.json
+experiments/*.log
+# ===== Phase 2 Week 7+8 部署必需文件(强制保留) =====
+# 公开部署演示需要
+!experiments/qa-eval-day6.json
+!experiments/entity-link-day2.json
+!experiments/eval-link-200-day6.json
+!experiments/graph-cail-day4.json
+!experiments/cross-dataset-day1.json
+!experiments/deploy-readiness-day2.json
