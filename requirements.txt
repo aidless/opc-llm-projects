@@ -2,7 +2,7 @@
 # Generated 2026-07-19 for Phase 2 Week 7 Day 4
 
 # Core
-pydantic>=2.0,<3.0
+pydantic>=2.13.5,<3.0
 networkx>=3.0,<4.0
 
 # Web Demo
