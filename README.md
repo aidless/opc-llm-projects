@@ -1,5 +1,7 @@
 # GraphRAG-CN · 中文事件抽取 + 实体链接 + 图谱 + RAG
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 > **OPC 一人公司 GraphRAG 项目** — Phase 0+1+2 研发产物（不完整快照）
 > 当前快照实测：12 个 Python 模块 / 3,511 行代码 / 64 个测试（5 个测试文件）/ 9 篇文档
 
